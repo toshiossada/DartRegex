@@ -35,5 +35,7 @@ toshiossada@gmail.com
     } else {
       debugPrint('Nenhuma CPF válido');
     }
+
+    expect(exp.hasMatch(cpfs), isTrue);
   });
 }

@@ -18,5 +18,7 @@ void main() {
     } else {
       debugPrint('Email invalido!');
     }
+
+    expect(exp.hasMatch(email), isTrue);
   });
 }
