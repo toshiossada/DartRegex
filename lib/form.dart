@@ -38,7 +38,7 @@ class FormWidget extends StatelessWidget {
             inputFormatters: [
               MaskTextInputFormatter(
                   mask: '###.###.###-##',
-                  filter: {"#": RegExp(r'[0-9xX]')},
+                  filter: {"#": RegExp(r'[\dxX]')},
                   type: MaskAutoCompletionType.lazy)
             ],
             validator: (text) {
